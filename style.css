@@ -62,9 +62,31 @@ header {
 /****** MEDIA QUERIES ****************/
 @media only screen and (min-width: 1024px) {
   header .header_top {
-    display: flex; }
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    header .header_top .logo_top #hamburger {
+      display: none; }
     header .header_top .search, header .header_top .secondary_menu {
       display: flex; }
+    header .header_top .search input:nth-of-type(1) {
+      padding: 0 0 0 5px;
+      margin: 0 5px 0 0;
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      box-shadow: 2px 2px 0 #d9d9d9;
+      width: 290px;
+      height: 33px; }
+    header .header_top .search input:nth-of-type(2) {
+      width: 40px;
+      height: 35px;
+      background-color: white;
+      background: url("http://localhost/wordpress/wp-content/themes/grifon/elements/loupe.png") no-repeat center;
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      box-shadow: 2px 2px 0 #d9d9d9; }
     header .header_top ul {
       display: flex; }
       header .header_top ul li {
@@ -72,7 +94,30 @@ header {
         border-right: 1px solid black;
         padding-left: 0.5em;
         padding-right: 0.5em; }
-      header .header_top ul li:nth-of-type(3) {
-        border: none; } }
+        header .header_top ul li:nth-of-type(3) {
+          border: none; }
+  header .header_menu {
+    background-color: #618089;
+    height: 70px; }
+    header .header_menu nav {
+      max-width: 800px;
+      margin: auto;
+      display: block; }
+      header .header_menu nav ul {
+        font-size: 1.250em;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 25px; }
+        header .header_menu nav ul li, header .header_menu nav ul a {
+          color: white;
+          text-decoration: none; }
+          header .header_menu nav ul li:hover, header .header_menu nav ul a:hover {
+            color: #d9d9d9;
+            border-bottom: 1px solid #d9d9d9; }
+          header .header_menu nav ul li ul, header .header_menu nav ul a ul {
+            display: none;
+            flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */
