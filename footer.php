@@ -2,11 +2,11 @@
 
       <nav>
         <?php
-          $args = array(
+          /*$args = array(
             'theme_location' => 'footer'
           );
         ?>
-        <?php wp_nav_menu();?>
+        <?php wp_nav_menu(); */?>
       </nav>
 
       <p><?php bloginfo('name');?>, copyright <?php echo date('Y');?></p>

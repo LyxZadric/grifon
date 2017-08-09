@@ -1,13 +1,20 @@
 /*
 Theme Name : Grifon_theme
-Author : Déborah BOODHOO
+Author : pitchex
 Author URI :
 Version : 1.0
 */
+
+// importation du fichier _vars.scss
+@import "styles/scss/variables.scss";
+
 body{
   font-family : open-sans;
   font-size : 1em;
   color : #333;
+  padding : 0;
+  margin: 0;
+  width : 100%;
 }
 h1,h2,h3,h4,h5{
   font-family : roboto;
@@ -15,5 +22,96 @@ h1,h2,h3,h4,h5{
 
 /**** HEADER *************/
 header{
-  
+    width : 100%;
+
+   .header_top{
+     height: 90px;
+     display : flex;
+
+
+     .logo_top{
+       display : flex;
+       align-items: center;
+
+       #logo_top{
+         margin-left : 2em;
+       }
+
+       #hamburger{
+         width: 40px;
+         height: 40px;
+         position : absolute;
+         right : 2em;
+       }
+
+     }
+
+
+     .search, .secondary_menu{
+       display : none;
+     }
+   }
+
+   .header_menu{
+     nav{
+       display : none;
+     }
+   }
+
+   .header_image{
+     width: 100%;
+     height: 500px;
+     background : url("http://localhost/wordpress/wp-content/themes/grifon/elements/main_image.jpg") no-repeat;
+     background-size : cover;
+
+     .opac{
+      width: 100%;
+      height: 100%;
+      background-color : rgba(0,0,0, 0.2);
+      display : flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align : center;
+     }
+     h1{
+       color : white;
+     }
+     button{
+       height: 50px;
+       width: 150px;
+       border-radius : 10px;
+       border : 1px solid white;
+       background-color: inherit;
+       color : white;
+     }
+  }
+}
+
+
+/****** MEDIA QUERIES ****************/
+@media only screen and (min-width: 1024px) {
+  header{
+     .header_top{
+       display : flex;
+
+       .search, .secondary_menu{
+         display : flex;
+       }
+
+       ul{
+         display : flex;
+
+         li{
+           list-style: none;
+           border-right : 1px solid black;
+           padding-left: 0.5em;
+           padding-right: 0.5em;
+         }
+         li:nth-of-type(3){
+           border : none;
+         }
+       }
+     }
+  }
 }
