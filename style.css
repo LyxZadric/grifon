@@ -51,13 +51,18 @@ header {
       text-align: center; }
     header .header_image h1 {
       color: white; }
-    header .header_image button {
+    header .header_image a {
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 50px;
       width: 150px;
       border-radius: 10px;
       border: 1px solid white;
-      background-color: inherit;
-      color: white; }
+      background-color: inherit; }
 
 /****** MEDIA QUERIES ****************/
 @media only screen and (min-width: 1024px) {
@@ -104,7 +109,7 @@ header {
       margin: auto;
       display: block; }
       header .header_menu nav ul {
-        font-size: 1.250em;
+        font-size: 1em;
         margin: 0;
         display: flex;
         justify-content: space-around;
@@ -119,5 +124,50 @@ header {
           header .header_menu nav ul li ul, header .header_menu nav ul a ul {
             display: none;
             flex-direction: column; } }
+/**** MAIN **************/
+/**** FOOTER ************/
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 1em; }
+  footer .footer {
+    max-width: 800px;
+    height: auto;
+    margin: auto; }
+    footer .footer nav {
+      padding: 4em 0 2em 0; }
+      footer .footer nav ul {
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        color: white; }
+        footer .footer nav ul li, footer .footer nav ul a {
+          color: white;
+          text-decoration: none;
+          padding-bottom: 1em; }
+          footer .footer nav ul li ul, footer .footer nav ul a ul {
+            padding: 0 0 0 0.5em;
+            display: flex;
+            flex-direction: column; }
+            footer .footer nav ul li ul li, footer .footer nav ul a ul li {
+              padding-bottom: 0; }
+        footer .footer nav ul a:hover {
+          color: #d9d9d9; }
+    footer .footer p, footer .footer a {
+      color: white;
+      text-align: center;
+      padding: 0 1em 0 1em; }
+    footer .footer a:hover {
+      color: #d9d9d9;
+      text-decoration: underline; }
+
+@media only screen and (min-width: 700px) {
+  footer .footer nav ul {
+    display: flex;
+    flex-flow: row wrap; }
+    footer .footer nav ul li ul, footer .footer nav ul a ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em; } }
 
 /*# sourceMappingURL=style.css.map */

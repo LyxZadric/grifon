@@ -54,7 +54,7 @@
           <div class="opac">
             <img src="<?php echo $path."elements/logo_blanc.png"?>" alt="logo_grifon">
             <h1><?php bloginfo("description");?></h1>
-            <button type="button" name="adherer">Adhérer</button>
+            <a href="#">Adhérer</a>
           </div>
         </div>
     </header>
