@@ -1,8 +1,9 @@
+// test
 footer{
    background-color : rgba(0, 0, 0, 0.8);
    padding-bottom : 1em;
   .footer{
-    max-width: 800px;
+    max-width: 900px;
     height: auto;
     margin : $a;
     nav{
@@ -32,10 +33,12 @@ footer{
        }
       }
     }
-    p,a{
-      color : white;
+    p{
       text-align:$c;
       padding : 0 1em 0 1em;
+    }
+    a,p{
+      color : white;
     }
     a:hover{
       color : $gray;
@@ -51,6 +54,7 @@ footer{
         ul{
           display : flex;
           flex-flow : row wrap;
+          justify-content: space-between;
           li,a {
             ul{
               display : flex;

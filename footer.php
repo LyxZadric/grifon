@@ -1,4 +1,4 @@
-    <footer>
+  <footer>
       <div class="contact">
 
       </div>
@@ -16,7 +16,7 @@
         <hr>
 
         <p><?php echo bloginfo('name') . " " . bloginfo('description');?> - copyright <?php echo date('Y');?><p>
-        <p>Design par : <a href="">Déborah Boodhoo</a> & <a href="">Quentin Marguerite</a></p>
+        <p>Design par :<a href="">Déborah Boodhoo</a>&<a href="">Quentin Marguerite</a></p>
       </div>
 
     </footer>
